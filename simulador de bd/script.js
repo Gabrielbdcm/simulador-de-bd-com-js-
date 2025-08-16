@@ -1,4 +1,4 @@
- <script>
+
 
         let nomeAluno = new Array();
         let cursoAluno = new Array();
@@ -6,20 +6,21 @@
 
 
 
-        function gerar() {
-            let nome = document.getElementById('nome').value;
-            let curso = document.getElementById('curso').value;
-            let idade = document.getElementById('idade').value;
+    function gerar() {
+            
 
-            if (nome && curso && idade) {
-                nomeAluno.push(nome);
-                cursoAluno.push(curso);
-                idadeAluno.push(idade);
-                alert("Cadastro realizado com sucesso!");
-            } else {
-                alert("Por favor, preencha todos os campos.");
-            }
-        }   
+            nomeAluno.push("Gabriel", "Maria", "Lara", "Ana", "Nicole", "José");
+            cursoAluno.push(
+            "Informática para Internet",
+            "Desenvolvimento de Sistemas",
+            "Ciência da Computação",
+            "Design Gráfico",
+            "Administração",
+            "Engenharia");
+            idadeAluno.push(16, 17, 18, 16, 17, 18);
+                imprimir();
+    
+    }
     
         function cadastrar() {
             nomeAluno.push(document.getElementById('nome').value);
@@ -62,4 +63,4 @@
             document.getElementById('resultado').innerHTML = "Último aluno excluído.";
             
         }
-    </script>
+
